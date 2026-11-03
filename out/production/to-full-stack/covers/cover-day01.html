@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:2350px; height:1000px; overflow:hidden; }
+  body {
+    background:#F6F3EC;
+    font-family:"PingFang SC","Hiragino Sans GB","Heiti SC",sans-serif;
+    color:#16150F;
+  }
+  .cover { position:relative; width:2350px; height:1000px; overflow:hidden; }
+
+  .spine { position:absolute; right:0; top:0; width:26px; height:100%; background:#E4391F; }
+
+  /* 顶部 */
+  .top {
+    position:absolute; left:130px; right:230px; top:96px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .kicker {
+    font-family:"SF Mono",Menlo,monospace;
+    font-size:25px; letter-spacing:7px; color:#8A8578;
+    display:flex; align-items:center; gap:22px;
+  }
+  .dot { width:13px; height:13px; background:#E4391F; flex:0 0 auto; }
+  .no { font-family:"SF Mono",Menlo,monospace; font-size:25px; letter-spacing:5px; color:#8A8578; }
+
+  /* 主体 */
+  .main {
+    position:absolute; left:130px; top:236px;
+    display:flex; align-items:center; gap:74px;
+  }
+  .daycol { display:flex; flex-direction:column; align-items:flex-start; }
+  .daylabel {
+    font-family:"SF Mono",Menlo,monospace;
+    font-size:26px; letter-spacing:14px; color:#8A8578;
+    margin-left:12px; margin-bottom:6px;
+  }
+  .daynum {
+    font-size:430px; line-height:0.86; font-weight:800;
+    color:#E4391F; letter-spacing:-6px;
+    -webkit-text-stroke:1.5px #E4391F;
+  }
+  .hr { width:1px; height:392px; background:#CFC8B8; flex:0 0 auto; }
+  .txt { padding-top:2px; }
+  .lead {
+    font-size:50px; font-weight:500; letter-spacing:5px; color:#6F6A5E;
+    margin-bottom:26px; white-space:nowrap;
+  }
+  .lead .ar { color:#E4391F; font-weight:700; padding:0 6px; }
+  .hello {
+    font-size:174px; line-height:1.0; font-weight:700;
+    letter-spacing:1px; -webkit-text-stroke:1.2px #16150F;
+    white-space:nowrap;
+  }
+  .comma { color:#E4391F; -webkit-text-stroke:1.2px #E4391F; }
+  .sub {
+    margin-top:34px;
+    font-size:46px; font-weight:400; letter-spacing:3px; color:#8A8578;
+    white-space:nowrap;
+  }
+  .sub b { font-weight:600; color:#4A4740; }
+
+  /* 底部 */
+  .foot { position:absolute; left:130px; right:230px; bottom:100px; }
+  .rule { height:1px; background:#D8D2C4; margin-bottom:26px; }
+  .footrow {
+    display:flex; align-items:center; justify-content:space-between;
+    font-family:"SF Mono",Menlo,monospace;
+    font-size:24px; letter-spacing:4px; color:#8A8578;
+  }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="spine"></div>
+
+  <div class="top">
+    <div class="kicker"><span class="dot"></span>FRONTEND&nbsp;&nbsp;→&nbsp;&nbsp;FULL-STACK</div>
+    <div class="no">JAVA&nbsp;/&nbsp;01</div>
+  </div>
+
+  <div class="main">
+    <div class="daycol">
+      <div class="daylabel">DAY</div>
+      <div class="daynum">01</div>
+    </div>
+    <div class="hr"></div>
+    <div class="txt">
+      <div class="lead">前端 6 年<span class="ar">→</span>转全栈第 1 天</div>
+      <div class="hello">Hello<span class="comma">,</span> Java</div>
+      <div class="sub">从 <b>JDK</b> 到第一个 <b>HelloWorld</b></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="rule"></div>
+    <div class="footrow">
+      <div>JDK · JVM · IDEA</div>
+      <div>2026.11.03</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

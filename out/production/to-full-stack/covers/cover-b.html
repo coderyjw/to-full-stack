@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:2350px; height:1000px; overflow:hidden; }
+  body {
+    background:#14130F;
+    font-family:"PingFang SC","Hiragino Sans GB","Heiti SC",sans-serif;
+    color:#F4F1E8;
+  }
+  .cover { position:relative; width:2350px; height:1000px; overflow:hidden; }
+  .spine { position:absolute; right:0; top:0; width:26px; height:100%; background:#E4391F; }
+  .vlabel {
+    position:absolute; right:186px; top:300px;
+    writing-mode:vertical-rl;
+    font-family:"SF Mono",Menlo,monospace;
+    font-size:23px; letter-spacing:11px; color:#5E594F;
+  }
+  .top {
+    position:absolute; left:130px; right:230px; top:96px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .kicker {
+    font-family:"SF Mono",Menlo,monospace;
+    font-size:25px; letter-spacing:7px; color:#8B8477;
+    display:flex; align-items:center; gap:22px;
+  }
+  .dot { width:13px; height:13px; background:#E4391F; flex:0 0 auto; }
+  .no { font-family:"SF Mono",Menlo,monospace; font-size:25px; letter-spacing:5px; color:#8B8477; }
+
+  .main { position:absolute; left:130px; top:246px; }
+  .l1, .l2 {
+    font-size:172px; line-height:1.06; font-weight:700;
+    letter-spacing:2px; white-space:nowrap;
+  }
+  .red { color:#E4391F; }
+  .box {
+    display:inline-block;
+    background:#E4391F; color:#14130F;
+    padding:4px 36px 18px 34px;
+    margin-left:20px;
+    font-size:166px; line-height:1;
+  }
+  .l2 { margin-top:22px; }
+  .sub {
+    margin-top:56px;
+    display:flex; align-items:center; gap:30px;
+    font-size:62px; font-weight:500; letter-spacing:6px; color:#B9B3A5;
+  }
+  .subbar { width:78px; height:6px; background:#E4391F; flex:0 0 auto; }
+
+  .foot { position:absolute; left:130px; right:230px; bottom:100px; }
+  .rule { height:1px; background:#3A362E; margin-bottom:26px; }
+  .footrow {
+    display:flex; align-items:center; justify-content:space-between;
+    font-family:"SF Mono",Menlo,monospace;
+    font-size:24px; letter-spacing:3px; color:#8B8477;
+  }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="spine"></div>
+  <div class="vlabel">FRONTEND 6Y → JAVA 0Y</div>
+
+  <div class="top">
+    <div class="kicker"><span class="dot"></span>FRONTEND&nbsp;&nbsp;→&nbsp;&nbsp;FULL-STACK</div>
+    <div class="no">LOG / 001</div>
+  </div>
+
+  <div class="main">
+    <div class="l1"><span class="red">6</span>年前端</div>
+    <div class="l2">准备入坑<span class="box">Java</span></div>
+    <div class="sub"><span class="subbar"></span>记录我的全栈转型路</div>
+  </div>
+
+  <div class="foot">
+    <div class="rule"></div>
+    <div class="footrow">
+      <div>前端 6 年 · JAVA 从零开始</div>
+      <div>2026</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
