@@ -1,6 +1,25 @@
-## 1.流程控制
+# Day 03｜前端转全栈第 3 天：if (1) 直接编译报错
 
-Java中的流程控制语句 switch、case、break、default、if/else 和 JS中的几乎都是一样的。我们快速过一下
+## 1. 流程控制
+
+### 1.1 先介绍一个类 Scanner
+
+```Java
+1.Scanner 是一个java语言提前定义好的类
+2.作用:通过键盘录入的形式将数据放到代码中参与运行
+3.使用:
+  a.导包:为了声明我们使用的是哪个包下的对象
+    import java.util.Scanner;
+  b.创建对象:
+    Scanner 对象名 = new Scanner(System.in)
+  c.调用对象中的功能:
+    对象名.nextInt() 键盘录入整数
+    对象名.next() 键盘录入字符串
+```
+
+### 1.2 switch、case、break、default、if/else
+
+Java中的流程控制语句 switch、case、break、default、if/else 和 JS中的几乎都是一样的。快速过一下就行
 
 | 对比项                        | Java                                                                    | JavaScript                                                        |
 | ----------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------- |
@@ -72,17 +91,87 @@ String res = switch (num) {
 }
 ```
 
-```java
-1.概述:java语言提前定义好的类
-2.作用:通过键盘录入的形式将数据放到代码中参与运行
-3.使用:
-  a.导包:为了声明我们使用的是哪个包下的对象
-    import java.util.Scanner;
-  b.创建对象:
-    Scanner 对象名 = new Scanner(System.in)
-  c.调用对象中的功能:
-    对象名.nextInt() 键盘录入整数
-    对象名.next() 键盘录入字符串
+## 2.循环
+
+java中的循环和js的也差不多，都有 **for循环**、while循环、do...while循环。不同的是java中循环的条件必须是boolean，没有for...of / for...in。遍历数组可以用 **增强 for(遍历集合，后面说)**
+
+### 2.1 for循环
+
+和js一样，但是条件**只能是 boolean**
+
+```Java
+for (int i = 0; i < 3; i++) {
+    System.out.println("我爱java");
+}
 ```
 
-## 2.循环
+### 2.2 while 循环
+
+一样条件**只能是 boolean**
+
+```Java
+        //1.定义一个count,接收对折的次数
+        int count = 0;
+        //2.定义一个变量,表示山峰的高度 -> mountain
+        int mountain = 8844430;
+        //3.定义一个变量,表示纸的厚度
+        double paper = 0.1;
+        //4.判断如果纸的厚度小于山峰的高度,就对折,然后统计对折次数
+        while(paper<mountain){
+            paper*=2;//paper = paper*2;
+            count++;
+        }
+        //5.输出count
+        System.out.println("count = " + count);
+```
+
+### 2.3 do...while
+
+```java
+int i = 1;
+do {
+    System.out.println("我爱钱");
+    i++;
+}while (i<=10);
+```
+
+### 2.4 这个三个循环的区别
+
+1. for循环中初始化的变量,出了for循环使用不了了
+2. while循环中的初始化变量,出了while还能使用
+3. do...while至少执行一次
+
+### 2.5 continue、break
+
+这两个也是一样的
+
+1. break:
+   1. 在switch中代表结束switch语句
+   2. 在循环中代表结束循环
+2. continue:
+   1. 结束当前本次循环,自动进入下一次循环
+
+## 3. 再介绍一个随机数类 Random
+
+在 js中要获取一个0-1 的随机数是用 Math.random() 方法
+
+而在 Java 中就是Random类。它位于 `java.util.Random`
+
+```java
+使用:
+  a.导包:import java.util.Random
+  b.创建对象:
+    Random 对象名 = new Random()
+  c.调用方法:
+    对象名.nextInt() -> 在int的取值范围随机一个数
+    对象名.nextInt(int bound) -> 在0-(bound-1)之间随机一个数
+```
+
+### 3.1 对比表
+
+| 项目             | JavaScript                      | Java                                |
+| ---------------- | ------------------------------- | ----------------------------------- |
+| 有没有 Random 类 | ❌ 无                           | ✅ `java.util.Random`               |
+| 调用方式         | `Math.random()` 静态方法        | `new Random()` 创建对象再调用方法   |
+| 自定义种子       | ❌ 不支持                       | ✅ 支持，构造方法传 seed            |
+| 能力             | 只返回 0~1 浮点数，其余自己计算 | 直接生成 int、boolean、long、double |
