@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="518aa6eb-e3d6-47df-9ca6-3602271f4884" name="Changes" comment="项目初始化">
-      <change beforePath="$PROJECT_DIR$/Day 03 |.md" beforeDir="false" afterPath="$PROJECT_DIR$/Day 03 |.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/yejiwei/test/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/to-full-stack/Day 03 |.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/to-full-stack/testdemo/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/to-full-stack/testdemo/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testdemo/Demo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +51,9 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3LZpwOG1vxja1JVMaoFstlOgBVN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -57,6 +63,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Demo.executor": "Run",
+    "Application.com.yejiwei.test.Demo.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -66,10 +73,13 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/coder/coder/workspace/to-full-stack",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.com.yejiwei.test.Demo">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testdemo.Demo" />
       <module name="to-full-stack" />
@@ -83,8 +93,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.yejiwei.test.Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yejiwei.test.Demo" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yejiwei.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yejiwei.test.TestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.yejiwei.test.Demo" />
         <item itemvalue="Application.Demo" />
       </list>
     </recent_temporary>
@@ -96,6 +127,9 @@
         <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.9437.185" />
       </set>
     </attachedChunks>
+  </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
