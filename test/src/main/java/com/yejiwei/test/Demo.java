@@ -24,12 +24,32 @@ public class Demo {
 //        System.out.println(person2+"......");
 //        person2.name = "王思聪";
 //        person2.speak("王健林");
+//
+//        Fu fu = new Fu();
+//        Zi zi = new Zi();
+//        System.out.println(fu.num);
+//        System.out.println(zi.num);
+//        fu.method();
+//        zi.method();
 
-        Fu fu = new Fu();
-        Zi zi = new Zi();
-        System.out.println(fu.num);
-        System.out.println(zi.num);
-        fu.method();
-        zi.method();
+        State weifukuan = State.WEIFUKUAN;
+        System.out.println("weifukuan = " + weifukuan); // weifukuan = WEIFUKUAN
+
+        State weifahuo = State.WEIFAHUO;
+        System.out.println(weifahuo.getName()); // 未发货
+
+        System.out.println("=============================");
+        State yifahuo = State.YIFAHUO;
+        System.out.println(yifahuo); // YIFAHUO
+        System.out.println(yifahuo.toString()); // YIFAHUO
+        System.out.println("=============================");
+        State[] values = State.values();
+        for (int i = 0; i < values.length; i++) {
+            System.out.println(values[i].getName());
+        }
+        System.out.println("============================");
+        State yifahuo1 = State.valueOf("YIFAHUO");
+        System.out.println("yifahuo1 = " + yifahuo1); // yifahuo1 = YIFAHUO
+
     }
 }
