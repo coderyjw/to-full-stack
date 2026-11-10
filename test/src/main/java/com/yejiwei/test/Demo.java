@@ -1,6 +1,9 @@
 package com.yejiwei.test;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Demo {
     static void change(int [] arr) {
@@ -51,15 +54,27 @@ public class Demo {
 //        State yifahuo1 = State.valueOf("YIFAHUO");
 //        System.out.println("yifahuo1 = " + yifahuo1); // yifahuo1 = YIFAHUO
 
-        BaoZiPu baoZiPu = new BaoZiPu();
+//        BaoZiPu baoZiPu = new BaoZiPu();
+//
+//        Product product = new Product(baoZiPu);
+//        Consumer consumer = new Consumer(baoZiPu);
+//
+//        Thread t1 = new Thread(product);
+//        Thread t2 = new Thread(consumer);
+//
+//        t1.start();
+//        t2.start();
 
-        Product product = new Product(baoZiPu);
-        Consumer consumer = new Consumer(baoZiPu);
+        List<String> words = List.of("java", "js", "rust", "go", "python");
 
-        Thread t1 = new Thread(product);
-        Thread t2 = new Thread(consumer);
+// 1. 分组：等价于 lodash 的 groupBy
+        Map<Integer, List<String>> byLength = words.stream()
+                .collect(Collectors.groupingBy(String::length));
+// {2=[js, go], 4=[java, rust], 6=[python]}
 
-        t1.start();
-        t2.start();
+// 2. 分组 + 统计个数
+        Map<Integer, Long> countByLength = words.stream()
+                .collect(Collectors.groupingBy(String::length, Collectors.counting()));
+        System.out.println(countByLength);
     }
 }
