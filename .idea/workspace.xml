@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="518aa6eb-e3d6-47df-9ca6-3602271f4884" name="Changes" comment="项目初始化">
-      <change beforePath="$PROJECT_DIR$/.workbuddy/memory/2026-11-09.md" beforeDir="false" afterPath="$PROJECT_DIR$/.workbuddy/memory/2026-11-09.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/yejiwei/test/BaoZiPu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/yejiwei/test/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/main/java/com/yejiwei/test/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.workbuddy/memory/MEMORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/.workbuddy/memory/MEMORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/com/yejiwei/test/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/com/yejiwei/test/Demo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>

@@ -2,7 +2,7 @@
 
 ## 文章规范
 - 系列标题格式：`Day NN｜前端转全栈第 N 天：<JS→Java 差异点>`，写入文章开头 H1，文件重命名为同名 .md。
-- 封面大字套路：前端写法（红色删除线）→ Java 写法（红色），等宽字体。已用：let→int / if(1)→if(true) / push()→int[5] / prototype→extends / throw "err"→new Exception() / ===→equals()。大字超过 ~21 个等宽字符（112px 字号）会溢出右边，需缩字号（84px）或缩短文案。
+- 封面大字套路：前端写法（红色删除线）→ Java 写法（红色），等宽字体。已用：let→int / if(1)→if(true) / push()→int[5] / prototype→extends / throw "err"→new Exception() / ===→equals() / event loop→new Thread() / Array→Collection。大字超过 ~21 个等宽字符（112px 字号）会溢出右边，需缩字号（84~96px）或缩短文案。
 - 文章定稿风格（Day05 起确认）：markdown 列表/表格替代代码块笔记、💬 第一人称感受引用块 2~3 处、文末「今日学习总结」+ 下篇预告钩子。
 
 ## 封面规范（2026-11-06 更新）
