@@ -1,5 +1,8 @@
 package com.yejiwei.test;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -65,16 +68,28 @@ public class Demo {
 //        t1.start();
 //        t2.start();
 
-        List<String> words = List.of("java", "js", "rust", "go", "python");
+//        List<String> words = List.of("java", "js", "rust", "go", "python");
+//
+//// 1. 分组：等价于 lodash 的 groupBy
+//        Map<Integer, List<String>> byLength = words.stream()
+//                .collect(Collectors.groupingBy(String::length));
+//// {2=[js, go], 4=[java, rust], 6=[python]}
+//
+//// 2. 分组 + 统计个数
+//        Map<Integer, Long> countByLength = words.stream()
+//                .collect(Collectors.groupingBy(String::length, Collectors.counting()));
+//        System.out.println(countByLength);
 
-// 1. 分组：等价于 lodash 的 groupBy
-        Map<Integer, List<String>> byLength = words.stream()
-                .collect(Collectors.groupingBy(String::length));
-// {2=[js, go], 4=[java, rust], 6=[python]}
-
-// 2. 分组 + 统计个数
-        Map<Integer, Long> countByLength = words.stream()
-                .collect(Collectors.groupingBy(String::length, Collectors.counting()));
-        System.out.println(countByLength);
+        try (FileInputStream fis = new FileInputStream("./note.txt")) {
+            byte[] buf = new byte[1024];     // 一次最多搬 1KB
+            int len;                          // 实际读到了几个字节
+            while ((len = fis.read(buf)) != -1) {
+                System.out.print(new String(buf, 0, len));
+            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
